@@ -6,18 +6,12 @@
 /*   By: zorwa <zorwa@student.42vienna.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/07 16:57:30 by zorwa             #+#    #+#             */
-/*   Updated: 2026/05/14 12:31:33 by zorwa            ###   ########.fr       */
+/*   Updated: 2026/05/14 20:15:18 by zorwa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-static char	*free_memory(char *ptr1, char *ptr2)
-{
-	free(ptr1);
-	free(ptr2);
-	return (NULL);
-}
 
 static char	*read_to_stock(int fd, char *stock)
 {
